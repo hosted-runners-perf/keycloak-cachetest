@@ -1,4 +1,4 @@
-name: Keycloak CI
+name: Keycloak CI No Cache
 
 on:
   workflow_dispatch:
@@ -19,7 +19,6 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: ${{ env.DEFAULT_JDK_VERSION }}
-          cache: 'maven'
       - name: Update maven settings
         run: mkdir -p ~/.m2 ; cp .github/settings.xml ~/.m2/
 
