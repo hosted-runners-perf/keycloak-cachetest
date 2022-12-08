@@ -2,8 +2,8 @@ name: Keycloak CI Cache
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "*/10 * * * *"
+  # schedule:
+  #   - cron: "*/10 * * * *"
 
 env:
   DEFAULT_JDK_VERSION: 11
